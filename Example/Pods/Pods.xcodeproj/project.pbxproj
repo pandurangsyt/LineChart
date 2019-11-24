@@ -210,7 +210,7 @@
 		B9689D37FA4C216704FEE97513107902 /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
-				FB635E81238AD9FC009BD3B2 /* Classes */,
+				FB635E81238AD9FC009BD3B2 /* classes */,
 				7D6F3DAAE6DBA51B830B367BA9E67329 /* Pod */,
 				0FD7BAAEC9BB459BC484ED889DA4AE3E /* Support Files */,
 			);
@@ -245,7 +245,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB635E81238AD9FC009BD3B2 /* Classes */ = {
+		FB635E81238AD9FC009BD3B2 /* classes */ = {
 			isa = PBXGroup;
 			children = (
 				FB635E82238ADA96009BD3B2 /* LineChart.swift */,
@@ -262,7 +262,7 @@
 				FB635E9A238ADC1C009BD3B2 /* LineLogic.swift */,
 				FB635E9C238ADC25009BD3B2 /* LineHelper.swift */,
 			);
-			path = Classes;
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
