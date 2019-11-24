@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LineChart'
-  s.version          = '0.2.0'
+  s.version          = '1.0.0'
   s.summary          = 'Dynamic Line Chart with animation'
 
 # This description is used to generate tags and improve search results.
@@ -30,13 +30,13 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'LineChart/Classes/**/*'
+  s.source_files = 'LineChart/Classes/*'
   
   # s.resource_bundles = {
   #   'LineChart' => ['LineChart/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+#  s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'QuartzCore'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
