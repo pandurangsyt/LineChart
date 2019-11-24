@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LineChart/Classes/**/*'
+  s.source_files = 'LineChart/Source/**.swift'
   
   # s.resource_bundles = {
   #   'LineChart' => ['LineChart/Assets/*.png']
