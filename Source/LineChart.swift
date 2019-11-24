@@ -134,7 +134,7 @@ open class LineChart: UIView {
             } else if index > dotsData.count - 1 {
                 dot = dotsData[dotsData.count - 1]
             } else {
-                dot = dotsData[index - 1]
+                dot = dotsData[index]
             }
             
             dot.backgroundColor = LineHelper.lightenUIColor(chartColors[lineIndex].dotColor).cgColor
@@ -229,7 +229,7 @@ open class LineChart: UIView {
         let data = self.dataStoreHouse[lineIndex]
         let outpath = UIBezierPath()
         
-        chartColors[lineIndex].areaColor.withAlphaComponent(0.2).setFill()
+        chartColors[lineIndex].areaColor.withAlphaComponent(0.1).setFill()
         outpath.move(to: CGPoint(x: y.axis.margin, y: Double(self.bounds.height) - x.axis.margin))
         outpath.addLine(to: CGPoint(x: y.axis.margin, y: Double(self.bounds.height) - Double((data[0] - y.start) / y.grid.count) * yStep - x.axis.margin))
         if let path = LineLogic.shared.createArea(path: outpath, dataPoints: dataPoints, curved: curved) {
