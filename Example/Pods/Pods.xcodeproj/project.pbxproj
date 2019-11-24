@@ -12,11 +12,23 @@
 		40EE6A175E357B37F43DB0A3E11D72B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		463898E3121A43913243F54D20DAE032 /* LineChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6371A41A3A78B9535FE98D4C6B470A /* LineChart-dummy.m */; };
 		4FBF47B1ECEB0EFC4A4040741AE39319 /* Pods-LineChart_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2AEFE09D6F49420606956BEE2FE5E3 /* Pods-LineChart_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54758150A2E4EBCDA82CA00B9EC798BA /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E4FB88C66ED514FA63DF370284B533 /* ReplaceMe.swift */; };
 		85E54B4A644F676B034A1FA2A39236BA /* Pods-LineChart_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB58C5281F25419E921C7AFBC35D4980 /* Pods-LineChart_Tests-dummy.m */; };
 		8A86E5FE60A081ECE238611F7CB4CD1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		8C61DB9B8761E8DC3F4A58CA0D211DAF /* Pods-LineChart_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 563C73639B81D5AF1A837D61DA041149 /* Pods-LineChart_Example-dummy.m */; };
 		D498E5E9FB184700240D9EE7A45D38BD /* LineChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E706541B2F2680024AF12AEB0C1DF8EC /* LineChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB635E83238ADA96009BD3B2 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E82238ADA96009BD3B2 /* LineChart.swift */; };
+		FB635E85238ADAA5009BD3B2 /* LineChartProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E84238ADAA5009BD3B2 /* LineChartProtocol.swift */; };
+		FB635E87238ADAB5009BD3B2 /* LineDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E86238ADAB5009BD3B2 /* LineDots.swift */; };
+		FB635E89238ADABE009BD3B2 /* LineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E88238ADABE009BD3B2 /* LineAnimation.swift */; };
+		FB635E8B238ADAC8009BD3B2 /* LineAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E8A238ADAC8009BD3B2 /* LineAxis.swift */; };
+		FB635E8D238ADACE009BD3B2 /* LineColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E8C238ADACE009BD3B2 /* LineColor.swift */; };
+		FB635E8F238ADAE7009BD3B2 /* LineDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E8E238ADAE7009BD3B2 /* LineDot.swift */; };
+		FB635E91238ADAEE009BD3B2 /* LineGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E90238ADAEE009BD3B2 /* LineGrid.swift */; };
+		FB635E95238ADB07009BD3B2 /* LineLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E94238ADB07009BD3B2 /* LineLabels.swift */; };
+		FB635E97238ADB11009BD3B2 /* LineX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E96238ADB11009BD3B2 /* LineX.swift */; };
+		FB635E99238ADB17009BD3B2 /* LineY.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E98238ADB17009BD3B2 /* LineY.swift */; };
+		FB635E9B238ADC1C009BD3B2 /* LineLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E9A238ADC1C009BD3B2 /* LineLogic.swift */; };
+		FB635E9D238ADC25009BD3B2 /* LineHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB635E9C238ADC25009BD3B2 /* LineHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,34 +53,46 @@
 		0C2B7F3D226585E6E85773CDE34A6E39 /* LineChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LineChart-prefix.pch"; sourceTree = "<group>"; };
 		15DF752C4AA8E2BAD573EA5493DE98A6 /* Pods-LineChart_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LineChart_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1A2AEFE09D6F49420606956BEE2FE5E3 /* Pods-LineChart_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LineChart_Example-umbrella.h"; sourceTree = "<group>"; };
-		20E4FB88C66ED514FA63DF370284B533 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LineChart/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		24FDAE1E3D6A24200983E5AEF39E09E8 /* Pods-LineChart_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LineChart_Example-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3CF9F6C5DA89BA2D2C73B325DE7D8710 /* Pods-LineChart_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LineChart_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		563C73639B81D5AF1A837D61DA041149 /* Pods-LineChart_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LineChart_Example-dummy.m"; sourceTree = "<group>"; };
-		6ED8FEA186A2DD2A2FA1C09690913631 /* LineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LineChart.framework; path = LineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED8FEA186A2DD2A2FA1C09690913631 /* LineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73837B4C66055459ED3823A1398E50B1 /* LineChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LineChart.xcconfig; sourceTree = "<group>"; };
-		7621443ED5AD29EB87895208403624BB /* Pods_LineChart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LineChart_Example.framework; path = "Pods-LineChart_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7621443ED5AD29EB87895208403624BB /* Pods_LineChart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineChart_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C2BBBBF5DA2837AECED565BFFC7B2C /* Pods-LineChart_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LineChart_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		913DCB3E47315C3C6AC3DB48495C9844 /* Pods-LineChart_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LineChart_Tests.modulemap"; sourceTree = "<group>"; };
 		9662EC497181238B4A70BEBC0F58DE75 /* LineChart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LineChart-Info.plist"; sourceTree = "<group>"; };
 		980C29E193FDE012828431B17FB7C6E3 /* Pods-LineChart_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LineChart_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA6371A41A3A78B9535FE98D4C6B470A /* LineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LineChart-dummy.m"; sourceTree = "<group>"; };
-		B120E7DF8CEA8D6DBA9306AB7DFE3679 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B120E7DF8CEA8D6DBA9306AB7DFE3679 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B4B344EB42955AAEB3E9D44647ED69AF /* Pods-LineChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LineChart_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BB58C5281F25419E921C7AFBC35D4980 /* Pods-LineChart_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LineChart_Tests-dummy.m"; sourceTree = "<group>"; };
-		BEECFF5565B4AF00A674FFF78A72CDC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		CD6EF8297CE260086804040430330F67 /* LineChart.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LineChart.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEECFF5565B4AF00A674FFF78A72CDC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CD6EF8297CE260086804040430330F67 /* LineChart.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LineChart.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D6E16FBDF2E5DE622BEA85C533099497 /* Pods-LineChart_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LineChart_Example.modulemap"; sourceTree = "<group>"; };
 		D74AED25CA91762B9229A91243125561 /* Pods-LineChart_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LineChart_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E17CBB825EF788B6B0BB9995513DA9F2 /* Pods-LineChart_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LineChart_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E706541B2F2680024AF12AEB0C1DF8EC /* LineChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LineChart-umbrella.h"; sourceTree = "<group>"; };
 		EC261A684DFAFB7D160F4E71884ABFA0 /* LineChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LineChart.modulemap; sourceTree = "<group>"; };
-		ED577F9955922AE128F54C0193BABDB0 /* Pods_LineChart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LineChart_Tests.framework; path = "Pods-LineChart_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED577F9955922AE128F54C0193BABDB0 /* Pods_LineChart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineChart_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F233F8CCE5CEF72F1D8B543DA731C6FC /* Pods-LineChart_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LineChart_Tests-Info.plist"; sourceTree = "<group>"; };
 		F495305231AE263F4139DC6F7604998E /* Pods-LineChart_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LineChart_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F7A9B1015DF0B1B98636D4D40C718A06 /* Pods-LineChart_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LineChart_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FB635E82238ADA96009BD3B2 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		FB635E84238ADAA5009BD3B2 /* LineChartProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartProtocol.swift; sourceTree = "<group>"; };
+		FB635E86238ADAB5009BD3B2 /* LineDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDots.swift; sourceTree = "<group>"; };
+		FB635E88238ADABE009BD3B2 /* LineAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineAnimation.swift; sourceTree = "<group>"; };
+		FB635E8A238ADAC8009BD3B2 /* LineAxis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineAxis.swift; sourceTree = "<group>"; };
+		FB635E8C238ADACE009BD3B2 /* LineColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineColor.swift; sourceTree = "<group>"; };
+		FB635E8E238ADAE7009BD3B2 /* LineDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDot.swift; sourceTree = "<group>"; };
+		FB635E90238ADAEE009BD3B2 /* LineGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGrid.swift; sourceTree = "<group>"; };
+		FB635E94238ADB07009BD3B2 /* LineLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLabels.swift; sourceTree = "<group>"; };
+		FB635E96238ADB11009BD3B2 /* LineX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineX.swift; sourceTree = "<group>"; };
+		FB635E98238ADB17009BD3B2 /* LineY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineY.swift; sourceTree = "<group>"; };
+		FB635E9A238ADC1C009BD3B2 /* LineLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLogic.swift; sourceTree = "<group>"; };
+		FB635E9C238ADC25009BD3B2 /* LineHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +210,7 @@
 		B9689D37FA4C216704FEE97513107902 /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
-				20E4FB88C66ED514FA63DF370284B533 /* ReplaceMe.swift */,
+				FB635E81238AD9FC009BD3B2 /* Source */,
 				7D6F3DAAE6DBA51B830B367BA9E67329 /* Pod */,
 				0FD7BAAEC9BB459BC484ED889DA4AE3E /* Support Files */,
 			);
@@ -219,6 +243,26 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB635E81238AD9FC009BD3B2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FB635E82238ADA96009BD3B2 /* LineChart.swift */,
+				FB635E84238ADAA5009BD3B2 /* LineChartProtocol.swift */,
+				FB635E86238ADAB5009BD3B2 /* LineDots.swift */,
+				FB635E88238ADABE009BD3B2 /* LineAnimation.swift */,
+				FB635E8A238ADAC8009BD3B2 /* LineAxis.swift */,
+				FB635E8C238ADACE009BD3B2 /* LineColor.swift */,
+				FB635E8E238ADAE7009BD3B2 /* LineDot.swift */,
+				FB635E90238ADAEE009BD3B2 /* LineGrid.swift */,
+				FB635E94238ADB07009BD3B2 /* LineLabels.swift */,
+				FB635E96238ADB11009BD3B2 /* LineX.swift */,
+				FB635E98238ADB17009BD3B2 /* LineY.swift */,
+				FB635E9A238ADC1C009BD3B2 /* LineLogic.swift */,
+				FB635E9C238ADC25009BD3B2 /* LineHelper.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +359,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					22236A0863C9EB7AA541730D31150F14 = {
+						LastSwiftMigration = 1120;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -381,8 +430,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB635E91238ADAEE009BD3B2 /* LineGrid.swift in Sources */,
+				FB635E85238ADAA5009BD3B2 /* LineChartProtocol.swift in Sources */,
+				FB635E83238ADA96009BD3B2 /* LineChart.swift in Sources */,
 				463898E3121A43913243F54D20DAE032 /* LineChart-dummy.m in Sources */,
-				54758150A2E4EBCDA82CA00B9EC798BA /* ReplaceMe.swift in Sources */,
+				FB635E87238ADAB5009BD3B2 /* LineDots.swift in Sources */,
+				FB635E8B238ADAC8009BD3B2 /* LineAxis.swift in Sources */,
+				FB635E9B238ADC1C009BD3B2 /* LineLogic.swift in Sources */,
+				FB635E97238ADB11009BD3B2 /* LineX.swift in Sources */,
+				FB635E89238ADABE009BD3B2 /* LineAnimation.swift in Sources */,
+				FB635E9D238ADC25009BD3B2 /* LineHelper.swift in Sources */,
+				FB635E8D238ADACE009BD3B2 /* LineColor.swift in Sources */,
+				FB635E99238ADB17009BD3B2 /* LineY.swift in Sources */,
+				FB635E8F238ADAE7009BD3B2 /* LineDot.swift in Sources */,
+				FB635E95238ADB07009BD3B2 /* LineLabels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +481,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LineChart_Tests/Pods-LineChart_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LineChart_Tests/Pods-LineChart_Tests.modulemap";
@@ -486,13 +547,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -549,7 +609,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -578,7 +638,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LineChart_Example/Pods-LineChart_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LineChart_Example/Pods-LineChart_Example.modulemap";
@@ -612,7 +672,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LineChart_Example/Pods-LineChart_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LineChart_Example/Pods-LineChart_Example.modulemap";
@@ -645,7 +705,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LineChart_Tests/Pods-LineChart_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LineChart_Tests/Pods-LineChart_Tests.modulemap";
@@ -666,6 +726,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73837B4C66055459ED3823A1398E50B1 /* LineChart.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -678,7 +739,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LineChart/LineChart-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LineChart/LineChart-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LineChart/LineChart.modulemap";
 				PRODUCT_MODULE_NAME = LineChart;
@@ -686,7 +747,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -697,6 +759,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73837B4C66055459ED3823A1398E50B1 /* LineChart.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -709,7 +772,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LineChart/LineChart-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LineChart/LineChart-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LineChart/LineChart.modulemap";
 				PRODUCT_MODULE_NAME = LineChart;
@@ -717,7 +780,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
