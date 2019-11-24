@@ -24,13 +24,13 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/pandurangsyt/LineChart'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'pandurangsyt' => 'pandurang.yachwad@gmail.com' }
+  s.author           = { 'Pandurang Yachwad' => 'pandurang.yachwad@gmail.com' }
   s.source           = { :git => 'https://github.com/pandurangsyt/LineChart.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LineChart/Source/**.swift'
+  s.source_files = 'LineChart/Classes/**/*'
   
   # s.resource_bundles = {
   #   'LineChart' => ['LineChart/Assets/*.png']
