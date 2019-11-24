@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LineChart_Example' do
+  pod 'LineChart', :path => '../'
+
+  target 'LineChart_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
