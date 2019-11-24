@@ -1,0 +1,16 @@
+PODS:
+  - LineChart (0.1.0)
+
+DEPENDENCIES:
+  - LineChart (from `../`)
+
+EXTERNAL SOURCES:
+  LineChart:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LineChart: 69dd3d4a9d07b093d7cb1710c40865b322f9747d
+
+PODFILE CHECKSUM: e7df5483ef28e0a22fe2e9dfa317513044bf3db5
+
+COCOAPODS: 1.8.4

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LineChart'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LineChart.'
+  s.summary          = 'Dynamic Line Chart with animation'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/pandurangsyt/LineChart'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'pandurangsyt' => 'pandurang.yachwad@gmail.com' }
+  s.author           = { 'Pandurang Yachwad' => 'pandurang.yachwad@gmail.com' }
   s.source           = { :git => 'https://github.com/pandurangsyt/LineChart.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

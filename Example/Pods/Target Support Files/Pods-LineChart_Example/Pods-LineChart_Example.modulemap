@@ -1,0 +1,6 @@
+framework module Pods_LineChart_Example {
+  umbrella header "Pods-LineChart_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

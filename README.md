@@ -22,7 +22,7 @@ pod 'LineChart'
 
 ## Author
 
-pandurangsyt, pandurang.yachwad@gmail.com
+Pandurang Yachwad, pandurang.yachwad@gmail.com
 
 ## License
 

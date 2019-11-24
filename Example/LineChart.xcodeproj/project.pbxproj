@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		120439922680FCABCBDB653C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2A2CBEFCB2622E8A65847023 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		120439922680FCABCBDB653C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2A2CBEFCB2622E8A65847023 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2AF5C29E40898659AAAF6A08 /* Pods-LineChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart_Example.release.xcconfig"; path = "Target Support Files/Pods-LineChart_Example/Pods-LineChart_Example.release.xcconfig"; sourceTree = "<group>"; };
 		388AC3CD65C892824E9714F4 /* Pods-LineChart_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LineChart_Tests/Pods-LineChart_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		500D2C0D28E176769E4D1A64 /* Pods-LineChart_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart_Example.debug.xcconfig"; path = "Target Support Files/Pods-LineChart_Example/Pods-LineChart_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		72F8D38DBA37BF2E1A4D5BA9 /* Pods_LineChart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineChart_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		981B53ECB0BF0C9E06063700 /* Pods_LineChart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineChart_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8AC521828F9A69364CC2D0 /* Pods-LineChart_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart_Tests.release.xcconfig"; path = "Target Support Files/Pods-LineChart_Tests/Pods-LineChart_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F60C36A3AC50ED2965F63169 /* LineChart.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LineChart.podspec; path = ../LineChart.podspec; sourceTree = "<group>"; };
+		F60C36A3AC50ED2965F63169 /* LineChart.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LineChart.podspec; path = ../LineChart.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				388AC3CD65C892824E9714F4 /* Pods-LineChart_Tests.debug.xcconfig */,
 				EC8AC521828F9A69364CC2D0 /* Pods-LineChart_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
