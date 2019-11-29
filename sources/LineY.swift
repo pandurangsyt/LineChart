@@ -11,6 +11,7 @@ public struct LineY {
     public var axis: LineAxis = LineAxis()
     public var start: Double = 0
     public var end: Double = 0
-    public var unitCall: String = ""
+    public var leadingUnitCall: String = ""
+    public var trailingUnitCall: String = ""
 }
 

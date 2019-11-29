@@ -110,7 +110,7 @@ open class LineChart: UIView {
         let point: AnyObject! = touches.anyObject() as AnyObject
         let xValue = point.location(in: self).x
         let inverted = Double(xValue) / xStep
-        let rounded = Int(round(inverted)) - 1
+        let rounded = Int(round(inverted))
         let yValues: [Double] = getYValuesForXValue(rounded)
         let selectPos = highlightDataPoints(rounded)
         delegate?.didSelectDotData(rounded, yValues: yValues)
@@ -297,8 +297,11 @@ open class LineChart: UIView {
     
     fileprivate func drawYLabels() {
         var labelWidth = Double(String(y.end).count) * y.labels.fontSize
-        if y.unitCall.count != 0 {
-            labelWidth = labelWidth + Double(y.unitCall.count) * y.labels.fontSize
+        if y.leadingUnitCall.count != 0 {
+            labelWidth = labelWidth + Double(y.leadingUnitCall.count) * y.labels.fontSize
+        }
+        if y.trailingUnitCall.count != 0 {
+            labelWidth = labelWidth + Double(y.trailingUnitCall.count) * y.labels.fontSize
         }
         for i in stride(from: y.start, through: y.end, by: y.grid.count){
             let index = (i - y.start) / y.grid.count
@@ -310,7 +313,7 @@ open class LineChart: UIView {
             let label = UILabel(frame: CGRect(x:-y.labels.fontSize, y: Double(self.bounds.height) - index * yStep - x.axis.margin - y.labels.fontSize / 2, width: y.axis.margin, height: y.labels.fontSize))
             label.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.caption2)
             label.textAlignment = .right
-            label.text = String(Int(round(i))) + y.unitCall
+            label.text = y.leadingUnitCall + String(Int(round(i))) + y.trailingUnitCall
             self.addSubview(label)
         }
     }

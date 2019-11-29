@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         lineChartView.y.grid.count = yGrid
         lineChartView.y.end = max  + yGrid * 2
         lineChartView.y.start = min - yGrid
-        lineChartView.y.unitCall = "$"
+        lineChartView.y.leadingUnitCall = "$ "
         lineChartView.addLine(data)
     }
 }
