@@ -28,7 +28,7 @@ open class LineChart: UIView {
     fileprivate var dataStoreHouse: [[Double]] = []
     fileprivate var colorStoreHouse: [UIColor] = []
     fileprivate var dataPoints: [CGPoint] = []
-    fileprivate var dotsStoreHourse: [[LineDot]] = []
+    fileprivate var dotsStoreHouse: [[LineDot]] = []
     fileprivate var lineLayerStore: [CAShapeLayer] = []
     fileprivate var xStep: Double = 0
     fileprivate var yStep: Double = 0
@@ -64,12 +64,12 @@ open class LineChart: UIView {
         }
         lineLayerStore.removeAll()
         
-        for dots in dotsStoreHourse {
+        for dots in dotsStoreHouse {
             for dot in dots {
                 dot.removeFromSuperlayer()
             }
         }
-        dotsStoreHourse.removeAll()
+        dotsStoreHouse.removeAll()
         
         if dataStoreHouse.count <= 0 {
             return
@@ -124,7 +124,7 @@ open class LineChart: UIView {
     }
     
     fileprivate func highlightDataPoints(_ index: Int) -> CGPoint {
-        for (lineIndex, dotsData) in dotsStoreHourse.enumerated() {
+        for (lineIndex, dotsData) in dotsStoreHouse.enumerated() {
             for dot in dotsData {
                 dot.backgroundColor = chartColors[lineIndex].dotColor.cgColor
             }
@@ -140,7 +140,7 @@ open class LineChart: UIView {
             dot.backgroundColor = LineHelper.lightenUIColor(chartColors[lineIndex].dotColor).cgColor
             
             return dot.position
-        }        
+        }
         return CGPoint.zero
     }
     
@@ -176,7 +176,7 @@ open class LineChart: UIView {
                 dotLayer.backgroundColor = chartColors[lineIndex].dotColor.cgColor
             }
         }
-        dotsStoreHourse.append(dotLayers)
+        dotsStoreHouse = [dotLayers]
     }
     
     fileprivate func drawAxes() {
@@ -221,7 +221,7 @@ open class LineChart: UIView {
                 anim.toValue = 1
                 layer.add(anim, forKey: "strokeEnd")
             }
-            lineLayerStore.append(layer)
+            lineLayerStore = [layer]
         }
     }
     
@@ -305,11 +305,7 @@ open class LineChart: UIView {
         }
         for i in stride(from: y.start, through: y.end, by: y.grid.count){
             let index = (i - y.start) / y.grid.count
-            
-            if Int(index) == 0 {
-                continue
-            }
-            
+                        
             let label = UILabel(frame: CGRect(x:-y.labels.fontSize, y: Double(self.bounds.height) - index * yStep - x.axis.margin - y.labels.fontSize / 2, width: y.axis.margin, height: y.labels.fontSize))
             label.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.caption2)
             label.textAlignment = .right
@@ -319,7 +315,7 @@ open class LineChart: UIView {
     }
     
     open func addLine(_ data: [Double]) {
-        dataStoreHouse.append(data)
+        dataStoreHouse = [data]
         self.setNeedsDisplay()
     }
     
@@ -332,6 +328,8 @@ open class LineChart: UIView {
     
     open func clear() {
         dataStoreHouse.removeAll()
+        colorStoreHouse.removeAll()
+        dataPoints.removeAll()
         self.setNeedsDisplay()
     }
     
